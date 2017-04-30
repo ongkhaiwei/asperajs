@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>NodeJS Application - Aspera - BCA Corenet2.0</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="ico/favicon.ico" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/application.css" type="text/css" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.7.2.js"></script>
+    <script src="http://d3gcli72yxqn2z.cloudfront.net/connect/v4/connectinstaller-4.min.js"></script>
+    <script src="http://d3gcli72yxqn2z.cloudfront.net/connect/v4/asperaweb-4.min.js"></script>
+    <script src="js/application.js"></script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td style= "width:30%;">
+          <img class = "newappIcon" src="images/newapp-icon.png">
+        </td>
+        <td>
+          <h1 id="message">Hello Aspera Web!</h1>
+          <p class='description'>This is the custom web UI integrate with Aspera.</p>
+          <p class='description'>
+            <div id="connect_installer" style="display: none; align:center"></div>
+            <div id="button_container" class="button_container"></div>
+          </p>
+          <br/><br/>
+          <p class='description'>Drag and Drop demo <a href="dragdrop.html" target="_blank">Drag & Drop</a></p>
+          <br/><br/>
+          <p class='description'>Access to <a href="http://demo.asperasoft.com/" target="_blank">Aspera Demo Website</a></p>
+          <br/><br/><br/><br/>
+          <p>
+            <a id="displayResultJSON" href="javascript:toggle('progress_meter','displayResultJSON', 'Result JSON');" >Show Result JSON</a>
+            <div class="clean-gray" id="progress_meter" style="display: none"></div>
+            <a id="displayTransferSpecificationJSON" href="javascript:toggle('transfer_spec','displayTransferSpecificationJSON', 'Transfer Specification JSON');" >Show Transfer Specification JSON</a>
+            <div class="clean-gray" id="transfer_spec" style="display: none"></div>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <script>
+      initAsperaConnect();
+    </script>
+  </body>
+
+</html>

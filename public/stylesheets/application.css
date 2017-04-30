@@ -1,0 +1,31 @@
+#drag-drop-area{
+  background-color: #00B2EF;
+  border: 1px solid #00649D;
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 300px;
+  color: #FFFFFF;
+  font-size: 25px;
+  transition: color 0.25s, line-height 0.25s;
+}
+
+.dragging-over{
+  display: none;
+  opacity: 0;
+}
+
+#drag-drop-area.dragging{
+  line-height: 150px;
+  background-color: #17AB4B;
+}
+
+#drag-drop-area.dragging .dragging-over{
+  display: block;
+  opacity: 1;
+}
+
+.enable-transfer{
+  text-align: center;
+}
