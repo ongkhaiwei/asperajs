@@ -7,7 +7,7 @@
 	},
 	"dependencies": {
 		"express": "4.13.x",
-		"cfenv": "1.0.x"
+		"cfenv": "1.2.1"
 	},
 	"repository": {},
 	"engines": {
